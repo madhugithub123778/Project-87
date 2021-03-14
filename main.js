@@ -92,3 +92,34 @@ if (keyPress=='39'){
      right();
 console.log("Right");}}
 
+
+
+function up(){
+if (player_y>=0){
+player_y= player_y-10;
+console.log("X= "+ player_x+ " Y= "+player_y);
+canvas.remove(player_object);
+player_update();}}
+
+function down(){
+if (player_y<=550){
+player_y=player_y+10;
+console.log("X= "+ player_x+ " Y= "+player_y);
+canvas.remove(player_object);
+player_update();}}
+
+function left(){
+if (player_x>=0){
+player_x= player_x-10;
+console.log("X= "+ player_x+ " Y= "+player_y);
+canvas.remove(player_object);
+player_update();}}
+
+function right(){
+if (player_x<=950){
+player_x= player_x+10;
+console.log("X= "+ player_x+ " Y= "+player_y);
+canvas.remove(player_object);
+player_update();}}
+
+
